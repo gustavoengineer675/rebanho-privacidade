@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidade do Rebanho</title>
+<meta name="description" content="Política de privacidade do aplicativo Rebanho, para pequenos pecuaristas.">
+<style>
+  :root {
+    --primary: #2E6B3F;
+    --primary-dark: #1F4D2C;
+    --background: #F6F5EF;
+    --surface: #FFFFFF;
+    --border: #E3E1D6;
+    --text: #1C1F1A;
+    --text-secondary: #4F5A4C;
+    --warning-bg: #FBEBD9;
+    --warning-text: #5C3208;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --primary: #8FC79C;
+      --primary-dark: #B5DDBC;
+      --background: #141713;
+      --surface: #1D211C;
+      --border: #333A31;
+      --text: #E8EAE4;
+      --text-secondary: #B3BDB0;
+      --warning-bg: #3A2A17;
+      --warning-text: #F3D9B8;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: Roboto, "Segoe UI", system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  header {
+    background: var(--primary);
+    color: #FFFFFF;
+    padding: 32px 16px 28px;
+  }
+  @media (prefers-color-scheme: dark) {
+    header { background: #1F4D2C; }
+  }
+  header .wrap { max-width: 720px; margin: 0 auto; }
+  header p { margin: 0 0 4px; font-size: 14px; letter-spacing: 0.04em; text-transform: uppercase; opacity: 0.85; }
+  header h1 { margin: 0; font-size: 28px; line-height: 1.25; }
+  main { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  h2 { margin: 0 0 8px; font-size: 20px; color: var(--primary-dark); }
+  p { margin: 0 0 12px; }
+  p:last-child, ul:last-child { margin-bottom: 0; }
+  ul { margin: 0 0 12px; padding-left: 22px; }
+  li { margin-bottom: 4px; }
+  .meta { color: var(--text-secondary); font-size: 14px; margin-bottom: 16px; }
+  .alert { background: var(--warning-bg); color: var(--warning-text); border-radius: 12px; padding: 12px 14px; margin: 12px 0; }
+  a { color: var(--primary-dark); }
+  footer { color: var(--text-secondary); font-size: 14px; text-align: center; padding: 0 16px 32px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p>Rebanho</p>
+    <h1>Política de privacidade</h1>
+  </div>
+</header>
+<main>
+  <p class="meta">Última atualização: 7 de novembro de 2026</p>
+
+  <div class="card">
+    <p>O Rebanho é um aplicativo para pequenos pecuaristas gerenciarem o gado. Esta política explica quais dados o app guarda e o que acontece com eles.</p>
+    <p><strong>Responsável:</strong> Gustavo Luis De Moura Fonseca.<br>
+    <strong>Contato:</strong> <a href="mailto:gustavolmf.eng@gmail.com">gustavolmf.eng@gmail.com</a></p>
+  </div>
+
+  <div class="card">
+    <h2>Resumo</h2>
+    <p>Nesta versão, o Rebanho funciona sem internet e sem conta. Seus dados ficam só no seu celular, e nós não temos acesso a eles.</p>
+  </div>
+
+  <div class="card">
+    <h2>Quais dados o app guarda</h2>
+    <p>Só o que você digita:</p>
+    <ul>
+      <li>dados da fazenda: nome, cidade e UF;</li>
+      <li>dados dos animais: brinco, nome, sexo, raça, nascimento, pesagens, vacinas e a foto de identificação, se você tirar uma;</li>
+      <li>compras e vendas: nome e contato do vendedor, nome do comprador, datas e valores;</li>
+      <li>tags NFC: o número do chip e o código gravado na tag, ligados ao animal.</li>
+    </ul>
+    <p>O app não pede CPF. Nomes e contatos de vendedores e compradores são dados de outras pessoas: registre só o necessário para o seu controle.</p>
+  </div>
+
+  <div class="card">
+    <h2>Onde os dados ficam</h2>
+    <p>Os dados ficam num banco criptografado no seu celular, com a chave protegida pelo próprio aparelho. As fotos dos animais ficam numa pasta do app que outros apps não acessam, mas fora do banco criptografado. O app não pede permissão de internet, não tem anúncios e não usa ferramentas de análise ou rastreamento. Nada é enviado para nós nem para terceiros.</p>
+    <p>O backup automático do Android fica desligado para este app. Se você desinstalar o app ou perder o celular sem ter exportado os dados, eles não poderão ser recuperados.</p>
+  </div>
+
+  <div class="card">
+    <h2>Tags NFC</h2>
+    <p>A tag guarda só um código sem significado. Nome, peso e valores nunca são gravados nela. Sem o seu celular, o código não identifica o animal.</p>
+  </div>
+
+  <div class="card">
+    <h2>Backup que você exporta</h2>
+    <p>Quando você usa "Exportar dados", o app cria um arquivo com todos os seus dados, inclusive as fotos, e abre as opções de compartilhamento do celular.</p>
+    <p class="alert"><strong>Esse arquivo não é criptografado</strong> e contém dados financeiros e pessoais. Depois de exportado, você decide onde ele fica e com quem é compartilhado.</p>
+  </div>
+
+  <div class="card">
+    <h2>Transferências entre fazendas</h2>
+    <p>Quando você vende animais pela aba Transferir, o app cria um arquivo para você mandar ao comprador. O arquivo leva o nome, a cidade e o código da sua fazenda, os dados da venda e os dados dos animais vendidos: pesagens, vacinas, foto e o código da tag. A compra de origem desses animais não vai no arquivo.</p>
+    <p class="alert"><strong>Esse arquivo não é criptografado.</strong> Mande só para o comprador.</p>
+    <p>Quando você recebe uma transferência, os dados que vieram no arquivo passam a ficar no seu celular, como os demais.</p>
+  </div>
+
+  <div class="card">
+    <h2>Permissões</h2>
+    <ul>
+      <li><strong>NFC:</strong> para gravar e ler as tags de orelha.</li>
+    </ul>
+    <p>A foto do animal é tirada pelo app de câmera do próprio celular, ou escolhida na galeria. Por isso o Rebanho não pede a permissão de câmera.</p>
+  </div>
+
+  <div class="card">
+    <h2>Seus direitos</h2>
+    <p>Os dados estão com você. Pelo app, você pode ver, corrigir e exportar. Para apagar tudo, desinstale o app e descarte os arquivos de backup que tiver exportado. Dúvidas sobre seus direitos pela LGPD podem ser enviadas ao contato acima.</p>
+  </div>
+
+  <div class="card">
+    <h2>Crianças</h2>
+    <p>O app é voltado para produtores rurais e não se destina a menores de 18 anos.</p>
+  </div>
+
+  <div class="card">
+    <h2>Mudanças</h2>
+    <p>Se o app passar a usar internet ou a sincronizar dados, esta política será atualizada antes dessa mudança chegar a você.</p>
+  </div>
+</main>
+<footer>Rebanho · gestão do gado para pequenos pecuaristas</footer>
+</body>
+</html>
