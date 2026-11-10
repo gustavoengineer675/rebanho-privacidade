@@ -77,7 +77,7 @@
   </div>
 </header>
 <main>
-  <p class="meta">Última atualização: 8 de novembro de 2026</p>
+  <p class="meta">Última atualização: 9 de novembro de 2026</p>
 
   <div class="card">
     <p>O Rebanho é um aplicativo para pequenos pecuaristas gerenciarem o gado. Esta política explica quais dados o app guarda e o que acontece com eles.</p>
@@ -87,16 +87,21 @@
 
   <div class="card">
     <h2>Resumo</h2>
-    <p>Nesta versão, o Rebanho funciona sem internet e sem conta. Seus dados ficam só no seu celular, e nós não temos acesso a eles.</p>
+    <ul>
+      <li>O rebanho fica só no seu celular, num banco criptografado. Nós não temos acesso a ele.</li>
+      <li>A conta é <strong>opcional</strong>. Sem conta, o app funciona sem internet, como sempre.</li>
+      <li>Se você entrar com o seu e-mail, o servidor do Rebanho guarda só o e-mail e o nome, a cidade, a UF e o código da fazenda. Isso serve para outros pecuaristas acharem a sua fazenda e para transferir animais pela internet.</li>
+      <li>Você pode excluir a conta pelo app ou pedindo por e-mail (veja <a href="#excluir-conta">Excluir a conta</a>).</li>
+    </ul>
   </div>
 
   <div class="card">
-    <h2>Quais dados o app guarda</h2>
+    <h2>Quais dados o app guarda no celular</h2>
     <p>Só o que você digita:</p>
     <ul>
       <li>dados da fazenda: nome, cidade e UF;</li>
       <li>dados dos animais: brinco, nome, sexo, raça, nascimento, pesagens, vacinas e a foto de identificação, se você tirar uma;</li>
-      <li>compras e vendas: nome e contato do vendedor, nome do comprador, datas e valores;</li>
+      <li>compras, vendas e gastos: nome e contato do vendedor, nome do comprador, datas e valores;</li>
       <li>tags NFC: o número do chip e o código gravado na tag, ligados ao animal.</li>
     </ul>
     <p>O app não pede CPF. Nomes e contatos de vendedores e compradores são dados de outras pessoas: registre só o necessário para o seu controle.</p>
@@ -104,13 +109,30 @@
 
   <div class="card">
     <h2>Onde os dados ficam</h2>
-    <p>Os dados ficam num banco criptografado no seu celular, com a chave protegida pelo próprio aparelho. As fotos dos animais ficam numa pasta do app que outros apps não acessam, mas fora do banco criptografado. O app não pede permissão de internet, não tem anúncios e não usa ferramentas de análise ou rastreamento. Nada é enviado para nós nem para terceiros.</p>
+    <p>Os dados ficam num banco criptografado no seu celular, com a chave protegida pelo próprio aparelho. As fotos dos animais ficam numa pasta do app que outros apps não acessam, mas fora do banco criptografado. O app não tem anúncios e não usa ferramentas de análise ou rastreamento.</p>
     <p>O backup automático do Android fica desligado para este app. Se você desinstalar o app ou perder o celular sem ter exportado os dados, eles não poderão ser recuperados.</p>
   </div>
 
   <div class="card">
-    <h2>Tags NFC</h2>
-    <p>A tag guarda só um código sem significado. Nome, peso e valores nunca são gravados nela. Sem o seu celular, o código não identifica o animal.</p>
+    <h2>Conta (opcional)</h2>
+    <p>Para entrar, você digita o seu e-mail e recebe um código de 6 números. Não há senha.</p>
+    <p>Com a conta, o servidor do Rebanho guarda:</p>
+    <ul>
+      <li>o seu e-mail, para mandar o código de acesso;</li>
+      <li>o nome, a cidade, a UF e o código da fazenda;</li>
+      <li>se a fazenda aparece ou não na busca.</li>
+    </ul>
+    <p><strong>Busca de fazendas:</strong> com a conta, a sua fazenda aparece por padrão na busca de outros pecuaristas que também têm conta. Eles veem só o nome, a cidade, a UF e o código da fazenda, nunca o seu e-mail nem o seu rebanho. Você pode desligar isso no primeiro acesso ou depois, em Configurações → Conta. Quem tiver o código da sua fazenda consegue achá-la mesmo com a busca desligada.</p>
+    <p>O rebanho (animais, pesagens, vacinas, fotos, compras, vendas e gastos) <strong>não vai para o servidor</strong>.</p>
+    <p><strong>Onde o servidor fica:</strong> usamos o Supabase, com os dados guardados em São Paulo. O e-mail com o código é enviado pelo Gmail. Esses serviços processam os dados só para fazer o app funcionar.</p>
+  </div>
+
+  <div class="card">
+    <h2>Transferências entre fazendas</h2>
+    <p><strong>Por arquivo:</strong> quando você vende animais pela aba Transferir, o app cria um arquivo para você mandar ao comprador. O arquivo leva o nome, a cidade e o código da sua fazenda, os dados da venda e os dados dos animais vendidos: pesagens, vacinas, foto e o código da tag. A compra de origem desses animais não vai no arquivo.</p>
+    <p class="alert"><strong>Esse arquivo não é criptografado.</strong> Mande só para o comprador.</p>
+    <p><strong>Pela internet (quando estiver disponível no app):</strong> só com a conta. Os mesmos dados do arquivo ficam no servidor até o comprador aceitar ou recusar. Só o vendedor e o comprador conseguem ver a transferência. As fotos são apagadas do servidor depois da resposta.</p>
+    <p>Quando você recebe uma transferência, os dados que vieram passam a ficar no seu celular, como os demais.</p>
   </div>
 
   <div class="card">
@@ -120,23 +142,31 @@
   </div>
 
   <div class="card">
-    <h2>Transferências entre fazendas</h2>
-    <p>Quando você vende animais pela aba Transferir, o app cria um arquivo para você mandar ao comprador. O arquivo leva o nome, a cidade e o código da sua fazenda, os dados da venda e os dados dos animais vendidos: pesagens, vacinas, foto e o código da tag. A compra de origem desses animais não vai no arquivo.</p>
-    <p class="alert"><strong>Esse arquivo não é criptografado.</strong> Mande só para o comprador.</p>
-    <p>Quando você recebe uma transferência, os dados que vieram no arquivo passam a ficar no seu celular, como os demais.</p>
+    <h2>Tags NFC</h2>
+    <p>A tag guarda só um código sem significado. Nome, peso e valores nunca são gravados nela. Sem o seu celular, o código não identifica o animal.</p>
   </div>
 
   <div class="card">
     <h2>Permissões</h2>
     <ul>
       <li><strong>NFC:</strong> para gravar e ler as tags de orelha.</li>
+      <li><strong>Internet:</strong> só para a conta opcional, a busca de fazendas e a transferência pela internet. Sem conta, o app não manda nada para a internet.</li>
     </ul>
     <p>A foto do animal é tirada pelo app de câmera do próprio celular, ou escolhida na galeria. Por isso o Rebanho não pede a permissão de câmera.</p>
   </div>
 
+  <div class="card" id="excluir-conta">
+    <h2>Excluir a conta</h2>
+    <ul>
+      <li><strong>Pelo app:</strong> Configurações → Conta → Excluir conta.</li>
+      <li><strong>Sem o app:</strong> mande um e-mail para <a href="mailto:gustavolmf.eng@gmail.com?subject=Excluir%20conta%20do%20Rebanho">gustavolmf.eng@gmail.com</a> com o assunto "Excluir conta do Rebanho", a partir do e-mail da conta. A exclusão é feita em até 7 dias, e você recebe uma confirmação.</li>
+    </ul>
+    <p>Excluir a conta apaga do servidor o e-mail, a fazenda e as transferências pendentes. O rebanho que está no seu celular não é apagado: para apagar, desinstale o app e descarte os backups exportados.</p>
+  </div>
+
   <div class="card">
     <h2>Seus direitos</h2>
-    <p>Os dados estão com você. Pelo app, você pode ver, corrigir e exportar. Para apagar tudo, desinstale o app e descarte os arquivos de backup que tiver exportado. Dúvidas sobre seus direitos pela LGPD podem ser enviadas ao contato acima.</p>
+    <p>Os dados do celular estão com você: pelo app, você pode ver, corrigir e exportar. Os dados da conta você vê e corrige em Configurações → Conta e em Dados da fazenda. Dúvidas sobre seus direitos pela LGPD podem ser enviadas ao contato acima.</p>
   </div>
 
   <div class="card">
@@ -146,7 +176,7 @@
 
   <div class="card">
     <h2>Mudanças</h2>
-    <p>Se o app passar a usar internet ou a sincronizar dados, esta política será atualizada antes dessa mudança chegar a você.</p>
+    <p>Quando esta política mudar, a data no topo é atualizada. Se o app passar a mandar outros dados para a internet, esta política será atualizada antes dessa mudança chegar a você.</p>
   </div>
 </main>
 <footer>Rebanho · gestão do gado para pequenos pecuaristas</footer>
