@@ -77,7 +77,7 @@
   </div>
 </header>
 <main>
-  <p class="meta">Última atualização: 9 de novembro de 2026</p>
+  <p class="meta">Última atualização: 12 de novembro de 2026</p>
 
   <div class="card">
     <p>O Rebanho é um aplicativo para pequenos pecuaristas gerenciarem o gado. Esta política explica quais dados o app guarda e o que acontece com eles.</p>
@@ -90,7 +90,7 @@
     <ul>
       <li>O rebanho fica só no seu celular, num banco criptografado. Nós não temos acesso a ele.</li>
       <li>A conta é <strong>opcional</strong>. Sem conta, o app funciona sem internet, como sempre.</li>
-      <li>Se você entrar com o seu e-mail, o servidor do Rebanho guarda só o e-mail e o nome, a cidade, a UF e o código da fazenda. Isso serve para outros pecuaristas acharem a sua fazenda e para transferir animais pela internet.</li>
+      <li>Se você entrar com o seu e-mail, o servidor do Rebanho guarda só o e-mail e o nome, o nome do dono (se você preencher), a cidade, a UF e o código da fazenda. Isso serve para outros pecuaristas acharem a sua fazenda e para transferir animais pela internet.</li>
       <li>Você pode excluir a conta pelo app ou pedindo por e-mail (veja <a href="#excluir-conta">Excluir a conta</a>).</li>
     </ul>
   </div>
@@ -119,10 +119,10 @@
     <p>Com a conta, o servidor do Rebanho guarda:</p>
     <ul>
       <li>o seu e-mail, para mandar o código de acesso;</li>
-      <li>o nome, a cidade, a UF e o código da fazenda;</li>
+      <li>o nome da fazenda, o nome do dono (opcional, em Dados da fazenda), a cidade, a UF e o código da fazenda;</li>
       <li>se a fazenda aparece ou não na busca.</li>
     </ul>
-    <p><strong>Busca de fazendas:</strong> com a conta, a sua fazenda aparece por padrão na busca de outros pecuaristas que também têm conta. Eles veem só o nome, a cidade, a UF e o código da fazenda, nunca o seu e-mail nem o seu rebanho. Você pode desligar isso no primeiro acesso ou depois, em Configurações → Conta. Quem tiver o código da sua fazenda consegue achá-la mesmo com a busca desligada.</p>
+    <p><strong>Busca de fazendas:</strong> com a conta, a sua fazenda aparece por padrão na busca de outros pecuaristas que também têm conta. Eles veem só o nome da fazenda, o nome do dono (se você preencher), a cidade, a UF e o código, nunca o seu e-mail nem o seu rebanho. Você pode desligar isso no primeiro acesso ou depois, em Configurações → Conta. Quem tiver o código da sua fazenda consegue achá-la mesmo com a busca desligada.</p>
     <p>O rebanho (animais, pesagens, vacinas, fotos, compras, vendas e gastos) <strong>não vai para o servidor</strong>.</p>
     <p><strong>Onde o servidor fica:</strong> usamos o Supabase, com os dados guardados em São Paulo. O e-mail com o código é enviado pelo Gmail. Esses serviços processam os dados só para fazer o app funcionar.</p>
   </div>
@@ -151,6 +151,7 @@
     <ul>
       <li><strong>NFC:</strong> para gravar e ler as tags de orelha.</li>
       <li><strong>Internet:</strong> só para a conta opcional, a busca de fazendas e a transferência pela internet. Sem conta, o app não manda nada para a internet.</li>
+      <li><strong>Digital ou rosto (opcional):</strong> para abrir o app, se você ligar o bloqueio. Quem confere é o próprio celular: o Rebanho não recebe nem guarda a sua digital ou o seu rosto. O PIN do app fica só no celular, embaralhado (hash), sem ir para o servidor.</li>
     </ul>
     <p>A foto do animal é tirada pelo app de câmera do próprio celular, ou escolhida na galeria. Por isso o Rebanho não pede a permissão de câmera.</p>
   </div>
